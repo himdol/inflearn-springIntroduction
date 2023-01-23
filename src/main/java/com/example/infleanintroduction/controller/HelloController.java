@@ -12,4 +12,11 @@ public class HelloController {
     model.addAttribute("data", "hello!!");
     return "hello";
   }
+
+  /*
+  * cd build cd libs ls-arlth
+  java -jar name.jar
+  spring 이 실행이 되는 것을 알 수가 있다.
+  컨트롤 + c 를 이용하여 종료할 수 있다.
+  * */
 }
