@@ -9,15 +9,24 @@ import org.springframework.stereotype.Service;
 import java.util.List;
 import java.util.Optional;
 
-@Service
+//@Service
 public class MemberService {
 
   private final MemberRepository memberRepository;
-  @Autowired
+  /*
+  * 자동으로 Autowired 어노테이션으로 빈 등록하는 방법
+  * */
+//  @Autowired
+//  public MemberService(MemberRepository memberRepository) {
+//    this.memberRepository = memberRepository;
+//  }
+
+  /*
+  * 수동으로 빈 등록하는 방벙
+  * */
   public MemberService(MemberRepository memberRepository) {
     this.memberRepository = memberRepository;
   }
-
   /***
    * 회원가입
    */
