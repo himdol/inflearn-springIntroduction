@@ -1,5 +1,6 @@
 package com.example.infleanintroduction;
 
+import com.example.infleanintroduction.aop.TimeTraceAop;
 import com.example.infleanintroduction.repository.*;
 import com.example.infleanintroduction.service.MemberService;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -9,6 +10,7 @@ import org.springframework.context.annotation.Configuration;
 
 import javax.persistence.EntityManager;
 import javax.sql.DataSource;
+import java.sql.Timestamp;
 
 @Configuration
 public class SpringConfig {
@@ -27,6 +29,10 @@ public class SpringConfig {
     return new MemberService(memberRepository);
   }
 
+//  @Bean
+//  public TimeTraceAop timeTraceAop() {
+//    return new TimeTraceAop();
+//  }
 //  @Bean
 //  public MemberRepository memberRepository() {
 //    return new MemoryMemberRepository();
